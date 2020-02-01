@@ -159,6 +159,18 @@
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
+.second-slide .card .btn {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 1em;
+    bottom: 1em;
+    left: 1em;
+    right: 1em;
+    z-index: 20;
+    filter: opacity(0);
+}
+
 .second-slide .card:hover {
     transform: scale(1.035, 1.035) perspective(1px);
     background: rgba(0, 0, 0, 0.8);
@@ -176,4 +188,13 @@
 .second-slide .card:hover img {
     filter: brightness(0.3) saturate(100%);
     transform: scale(1) perspective(1px);
+}
+
+.second-slide .card:hover .btn {
+    filter: invert(100%) sepia(58%) saturate(0%) hue-rotate(342deg) brightness(104%) contrast(103%);
+}
+
+.second-slide .card .btn:hover {
+    transform: scale(1.1);
+    filter: invert(100%) sepia(58%) saturate(0%) hue-rotate(342deg) brightness(160%) contrast(103%);
 }
