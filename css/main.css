@@ -46,11 +46,23 @@ font-weight: 600;
     font-weight: 600;
 }
 @media (min-width: 770px) and (max-width:830px) {
+    .second-slide .header{
+        color:#50565D!important;
+        font-weight: 450!important;
+        font-size: 10vw;
+        padding-bottom: 1em;
+    }
     .first-slide .pic{
         top:-6em;
     }
 }
 @media (min-width: 830px) and (max-width:1000px) {
+    .second-slide .header{
+        color:#50565D!important;
+        font-weight: 450!important;
+        font-size: 10vw;
+        padding-bottom: 1em;
+    }
     .first-slide .pic{
         top:-7em;
     }
@@ -60,6 +72,12 @@ font-weight: 600;
         top:-11em;
         max-width:25em;
     }
+}
+.second-slide .header{
+    color:#50565D!important;
+    font-weight: 450!important;
+    font-size: 4vw;
+    padding-bottom: 1em;
 }
 @media (max-width: 768px) {
     .nav-item:hover{
@@ -78,11 +96,14 @@ font-weight: 600;
         font-size: 10vw;
         font-weight: 450!important;
     }
+    .second-slide .header{
+        color:#50565D!important;
+        font-weight: 450!important;
+        font-size: 10vw;
+        padding-bottom: 1em;
+    }
  }
- .second-slide .header{
-    color:#50565D!important;
-    font-weight: 450!important;
-}
+
  .second-slide .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
