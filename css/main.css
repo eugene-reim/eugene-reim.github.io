@@ -28,14 +28,14 @@
     color: #A6ABB9!important;
     font-size: 1.05rem;
     font-weight: 600;
-    transition: 0.5s;
+    transition: 0.5s all;
     cursor: pointer;
 }
 
 .nav-item:hover {
     color: rgb(131, 131, 131)!important;
     transform: translateY(-1.5px);
-    transition: 0.5s;
+    transition: 0.5s all;
     text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -129,7 +129,7 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
     display: grid;
     grid-template-rows: 1fr 1fr;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) all;
 }
 
 .second-slide .card h3 {
@@ -137,9 +137,7 @@
     font-size: 24px;
     margin: 20px 0 0 20px;
     filter: opacity(0);
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) all;
 }
 
 .second-slide .card p {
@@ -150,9 +148,7 @@
     margin: 0 0 20px 20px;
     letter-spacing: 0.5px;
     filter: opacity(0);
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) all;
 }
 
 .second-slide .card img {
@@ -162,9 +158,7 @@
     height: 90%;
     width: 100%;
     z-index: 0;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) all;
 }
 
 .second-slide .card .btn {
@@ -177,9 +171,7 @@
     right: 1em;
     z-index: 20;
     filter: opacity(0);
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) all;
 }
 
 .second-slide .card:hover {
