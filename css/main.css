@@ -175,7 +175,7 @@
 }
 
 .second-slide .card:hover {
-    transform: scale(1.035, 1.035) perspective(1px);
+    transform: scale(1.2);
     background: rgba(0, 0, 0, 0.8);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
