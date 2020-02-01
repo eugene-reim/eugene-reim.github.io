@@ -138,6 +138,8 @@
     margin: 20px 0 0 20px;
     filter: opacity(0);
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .second-slide .card p {
@@ -149,6 +151,8 @@
     letter-spacing: 0.5px;
     filter: opacity(0);
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .second-slide .card img {
@@ -159,6 +163,8 @@
     width: 100%;
     z-index: 0;
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .second-slide .card .btn {
@@ -172,6 +178,8 @@
     z-index: 20;
     filter: opacity(0);
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .second-slide .card:hover {
