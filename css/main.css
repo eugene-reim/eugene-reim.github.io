@@ -137,6 +137,7 @@
     font-size: 24px;
     margin: 20px 0 0 20px;
     filter: opacity(0);
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .second-slide .card p {
@@ -147,6 +148,7 @@
     margin: 0 0 20px 20px;
     letter-spacing: 0.5px;
     filter: opacity(0);
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .second-slide .card img {
@@ -169,6 +171,7 @@
     right: 1em;
     z-index: 20;
     filter: opacity(0);
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .second-slide .card:hover {
@@ -187,7 +190,7 @@
 
 .second-slide .card:hover img {
     filter: brightness(0.3) saturate(100%);
-    transform: scale(1) perspective(1px);
+    transform: scale(1);
 }
 
 .second-slide .card:hover .btn {
