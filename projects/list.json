@@ -1,5 +1,11 @@
 [{
-    "title": "First Project",
-    "desc": "This is the my first project",
-    "img": "img/web_developer.svg"
-}]
+        "title": "First Project",
+        "desc": "This is the my first project",
+        "img": "img/web_developer.svg"
+    },
+    {
+        "title": "Second Project",
+        "desc": "This is the my second project",
+        "img": "img/web_developer.svg"
+    }
+]
