@@ -136,7 +136,7 @@
     color: white;
     font-size: 24px;
     margin: 20px 0 0 20px;
-    z-index: -1;
+    filter: opacity(0);
 }
 
 .second-slide .card p {
@@ -146,7 +146,7 @@
     align-self: end;
     margin: 0 0 20px 20px;
     letter-spacing: 0.5px;
-    z-index: -1;
+    filter: opacity(0);
 }
 
 .second-slide .card img {
@@ -178,11 +178,11 @@
 }
 
 .second-slide .card:hover p {
-    z-index: 1;
+    filter: opacity(1);
 }
 
 .second-slide .card:hover h3 {
-    z-index: 1;
+    filter: opacity(1);
 }
 
 .second-slide .card:hover img {
