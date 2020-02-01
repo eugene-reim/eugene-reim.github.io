@@ -171,11 +171,11 @@
     right: 1em;
     z-index: 20;
     filter: opacity(0);
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) all;
+    transition: 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) all;
 }
 
 .second-slide .card:hover {
-    transform: scale(1);
+    transform: scale(1.035, 1.035) perspective(1px);
     background: rgba(0, 0, 0, 0.8);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
