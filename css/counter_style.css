@@ -49,3 +49,9 @@ body {
   padding: 0.5rem;
   text-align: center;
 }
+.tag{
+  color:#475264;
+  font-size: 4.5rem;
+  display: block;
+  float:start;
+}
