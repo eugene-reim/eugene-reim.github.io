@@ -21,7 +21,7 @@ li {
 }
 
 li span {
-  font-weight: regular!important;
+  font-weight: normal;
   display: block;
   font-size: 4.5rem;
 }
@@ -54,6 +54,4 @@ body {
   top:0;
   left:0;
   color:#475264;
-  font-size: 4.5em;
-  
 }
