@@ -7,14 +7,14 @@ let countDown = new Date('May 03, 2020 20:00:00').getTime(),
         let now = new Date().getTime(),
             distance = countDown - now;
         if (Math.floor(distance / (day)) >= 3) {
-            document.getElementById('container h1').innerText = "The Challenge starts in"
+            document.getElementById('title').innerText = "The Challenge starts in"
             let remain = distance - (day * 3);
             document.getElementById('days').innerText = Math.floor(remain / (day)),
                 document.getElementById('hours').innerText = Math.floor((remain % (day)) / (hour)),
                 document.getElementById('minutes').innerText = Math.floor((remain % (hour)) / (minute)),
                 document.getElementById('seconds').innerText = Math.floor((remain % (minute)) / second);
         } else {
-            document.getElementById('container h1').innerText = "The Challenge deadline in"
+            document.getElementById('title').innerText = "The Challenge deadline in"
             document.getElementById('days').innerText = Math.floor(distance / (day)),
                 document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
                 document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
