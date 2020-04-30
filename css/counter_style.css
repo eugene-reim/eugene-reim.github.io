@@ -5,7 +5,9 @@
 }
 
 h1 {
-  font-weight: normal;
+  font-weight: bold;
+  font-size:1.6;
+  color:#FFFFFF;
 }
 
 li {
@@ -14,6 +16,7 @@ li {
   list-style-type: none;
   padding: 1em;
   text-transform: uppercase;
+  color:#475264;
 }
 
 li span {
@@ -30,7 +33,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #ffd54f;
+  background-color: #151C26;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,10 +52,4 @@ body {
   margin: 0 auto;
   padding: 0.5rem;
   text-align: center;
-}
-.container h1{
-color:#FFFFFF;
-}
-.container span{
-color:#475264;
 }
