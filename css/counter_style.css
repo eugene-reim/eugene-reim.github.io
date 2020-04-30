@@ -50,8 +50,10 @@ body {
   text-align: center;
 }
 .tag{
-  position:absolute;
-  top:0;
-  left:0;
-  color:#475264;
+  position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: #475264;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
