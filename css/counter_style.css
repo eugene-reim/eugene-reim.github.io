@@ -6,7 +6,7 @@
 
 h1 {
   font-weight: bold;
-  font-size:3rem;
+  font-size:4rem;
   color:#FFFFFF;
 }
 
@@ -17,9 +17,11 @@ li {
   padding: 1em;
   text-transform: uppercase;
   color:#475264;
+  font-weight: bold;
 }
 
 li span {
+  font-weight: regular!important;
   display: block;
   font-size: 4.5rem;
 }
