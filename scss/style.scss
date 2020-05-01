@@ -1,0 +1,10 @@
+$bg-fcolor:#242E3A;
+$bg-scolor:#1C242F;
+section{
+    height: 100vh;
+}
+.f-slide{
+    background: -webkit-radial-gradient(center, circle cover, $bg-scolor 0%, $bg-fcolor 90%);
+    background: radial-gradient(center, circle cover, $bg-scolor 0%, $bg-fcolor 90%);
+    background-color: $bg-fcolor;
+}
