@@ -1,2 +1,2 @@
-section{height:100vh}.f-slide{background:radial-gradient(center, circle cover, #1C242F 0%, #242E3A 90%);background-color:#242E3A}
+section{height:100vh}.slide-1{background:radial-gradient(#1F2630 0%, #161C26 100%);background-color:#161C26}.wrapper{position:relative;overflow:hidden;-webkit-transition:1s cubic-bezier(0.5, 0, 0.5, 1);transition:1s cubic-bezier(0.5, 0, 0.5, 1)}
 /*# sourceMappingURL=style.min.css.map */

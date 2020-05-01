@@ -1,10 +1,15 @@
-$bg-fcolor:#242E3A;
-$bg-scolor:#1C242F;
+$bg-fcolor:#161C26;
+$bg-scolor:#1F2630;
 section{
     height: 100vh;
 }
-.f-slide{
-    background: -webkit-radial-gradient(center, circle cover, $bg-scolor 0%, $bg-fcolor 90%);
-    background: radial-gradient(center, circle cover, $bg-scolor 0%, $bg-fcolor 90%);
+.slide-1{
+    background: -webkit-radial-gradient($bg-scolor 0%, $bg-fcolor 100%);
+    background: radial-gradient($bg-scolor 0%, $bg-fcolor 100%);
     background-color: $bg-fcolor;
+}
+.wrapper{
+    position: relative;
+	overflow: hidden;
+	transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
 }
