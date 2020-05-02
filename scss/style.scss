@@ -1,15 +1,126 @@
-$bg-fcolor:#161C26;
-$bg-scolor:#1F2630;
-section{
-    height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;800&display=swap');
+$bg-fcolor: #161c26;
+$bg-scolor: #1f2630;
+
+$scrollbar-size : 10px;
+$scrollbar-track : transparent;
+$scrollbar-thumb : #475364;
+*{
+    font-family: 'Sen', sans-serif!important;
 }
-.slide-1{
+::-webkit-scrollbar { 
+  width: $scrollbar-size; 
+  height: $scrollbar-size;
+  background: $scrollbar-track;  
+}
+
+::-webkit-scrollbar-thumb {
+  background: $scrollbar-thumb; 
+  border-radius: $scrollbar-size / 2; 
+
+  &:hover {
+    background: darken($scrollbar-thumb, 2%); 
+  }
+  
+  &:active {
+    background: darken($scrollbar-thumb, 5%); 
+  }
+  
+}
+
+::-webkit-scrollbar-corner { 
+  background: $scrollbar-thumb;
+}
+
+::-webkit-resizer  { 
+  background: $scrollbar-thumb;  
+}
+html {
     background: -webkit-radial-gradient($bg-scolor 0%, $bg-fcolor 100%);
     background: radial-gradient($bg-scolor 0%, $bg-fcolor 100%);
     background-color: $bg-fcolor;
+    background-size: cover;
+    background-attachment: fixed;
 }
-.wrapper{
-    position: relative;
-	overflow: hidden;
-	transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+section {
+    height: 100vh;
+}
+.nav-bar {
+    position: fixed;
+    z-index: 20;
+    height: 100vh;
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .list {
+        height: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .home {
+            display: block;
+            max-width: 2rem;
+            img {
+                opacity: 1;
+                width: 100%;
+            }
+        }
+        .about {
+            display: block;
+            max-width: 2rem;
+            img {
+                opacity: 0.4;
+                width: 100%;
+            }
+        }
+        .feed {
+            display: block;
+            max-width: 2rem;
+            img {
+                opacity: 0.4;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.slide-1 {
+    grid-area: s-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    .text-box{
+        padding: 3rem;
+        .t-1{
+            font-size: 70px;
+            font-weight: bold;
+            color: #FFF;
+            margin-bottom:1rem;
+        }
+        .t-2{
+            font-size: 67px;
+            font-weight: bold;
+            color:#475364;
+            margin-bottom:1rem;
+        }
+        .t-3{
+            font-size:20px;
+            line-height: 2rem;
+            font-weight: normal;
+            color:#687484;
+        }
+    }
+}
+.slide-2 {
+    grid-area: s-2;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 3rem 1fr 3rem;
+    grid-template-areas:
+        "nav s-1 scroll"
+        ". s-2 .";
 }
