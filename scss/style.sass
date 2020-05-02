@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400800&display=swap")
+$bg-fcolor: #161c26
+$bg-scolor: #1f2630
+$scr-state: 3rem
+*
+    font-family: "Sen", sans-serif !important
+html
+    overflow: hidden
+    background: -webkit-radial-gradient($bg-scolor 0%, $bg-fcolor 100%)
+    background: radial-gradient($bg-scolor 0%, $bg-fcolor 100%)
+    background-color: $bg-fcolor
+    background-size: cover
+    background-attachment: fixed
+
+section
+    height: 100vh
+
+.nav-bar
+    position: fixed
+    z-index: 20
+    height: 100vh
+    width: 3rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .list
+        height: 10rem
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        img
+            opacity: 0.4
+            width: 100%
+            transition: all 0.3s
+
+        .home,
+        .about,
+        .feed
+            display: block
+            max-width: 1.5rem
+            &:active,
+            &:hover
+                img
+                    opacity: 1
+                    transform: scale(1.1)
+                    transition: all 0.6s
+            &.selected
+                img
+                    opacity: 1
+                    transform: scale(1.1)
+                    transition: all 0.6s
+.scroll
+    position: fixed
+    z-index: 20
+    right: 0
+    height: 100vh
+    width: 3rem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .line
+        background-color: #FFF
+        opacity: 0.4
+        height: 10rem
+        width: 0.1rem
+        display: flex
+        flex-direction: column
+        align-items: center
+        .bar
+            margin-top: 0rem
+            width: 0.4rem
+            height: 3rem
+            background-color: #FFF
+            transition: cubic-bezier(0.19, 1, 0.22, 1) 1.3s
+.wrapper
+    display: grid
+    grid-template-columns: 3rem 1fr 3rem
+    grid-template-rows: 100vh 100vh 100vh
+    grid-template-areas: ". s-1 ." ". s-2 ." ". s-3 ."
+
+.slide-1
+    grid-area: s-1
+    display: grid
+    grid-template-columns: 1fr 2rem 1fr
+    grid-template-areas: "tbox mouse img"
+    align-items: center
+    .text-box
+        grid-area: tbox
+        padding: 3rem
+        .t-1
+            font-size: 70px
+            font-weight: bold
+            color: #fff
+            margin-bottom: 1rem
+
+        .t-2
+            font-size: 67px
+            font-weight: bold
+            color: #475364
+            margin-bottom: 1rem
+
+        .t-3
+            font-size: 20px
+            line-height: 2rem
+            font-weight: normal
+            color: #687484
+
+    .mouse
+        height: 100%
+        display: flex
+        justify-content: center
+        grid-area: mouse
+        img
+            position: absolute
+            bottom: 0.5rem
+            max-width: 1.1rem
+            opacity: 0.4
+            
+    .image
+        grid-area: img
+        overflow: hidden
+        img
+            max-width: 100%
+
+.slide-2
+    grid-area: s-2
+.slide-3
+    grid-area: s-3
