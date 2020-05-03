@@ -41,7 +41,7 @@ let tsX = 0,
     tsY = 0,
     teX = 0,
     teY = 0;
-const gZone = document.querySelector(".wrapper");
+const gZone = document.querySelector("html");
 
 gZone.addEventListener('touchstart', e => {
     tsX = e.changedTouches[0].screenX;
