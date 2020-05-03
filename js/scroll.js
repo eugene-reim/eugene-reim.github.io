@@ -26,7 +26,6 @@ function doScroll(e, t) {
     document.querySelectorAll('.list .selected').forEach(n => n.classList.remove('selected'))
     if (t) e.classList.add("selected"), e = document.querySelector('.' + t), currentSection = parseInt(t.split("").slice(-1)[0]) - 1;
     if (currentSection == 1) document.querySelectorAll('.p-progress').forEach((n, i) => {
-        console.log(n)
         if (i == 0) n.style["width"] = "80%", n.style["transition-delay"] = "0.4s"
         if (i == 1) n.style["width"] = "60%", n.style["transition-delay"] = "0.5s"
         if (i == 2) n.style["width"] = "95%", n.style["transition-delay"] = "0.6s"
@@ -37,7 +36,7 @@ function doScroll(e, t) {
 }
 
 /*------------- Gesture Handle -------------*/
-let tsX = 0,
+/*let tsX = 0,
     tsY = 0,
     teX = 0,
     teY = 0;
@@ -57,7 +56,7 @@ gZone.addEventListener('touchend', e => {
 function handleGesture() {
     if (teY <= tsY) scrollTo(0);
     if (teY >= tsY) scrollTo(1);
-}
+}*/
 
 /*------------- Custom Scrollbar -------------*/
 let scrollHeight = 20,
