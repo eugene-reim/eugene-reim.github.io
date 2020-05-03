@@ -25,6 +25,14 @@ function scrollTo(d) {
 function doScroll(e, t) {
     document.querySelectorAll('.list .selected').forEach(n => n.classList.remove('selected'))
     if (t) e.classList.add("selected"), e = document.querySelector('.' + t), currentSection = parseInt(t.split("").slice(-1)[0]) - 1;
+    if (currentSection == 1) document.querySelectorAll('.p-progress').forEach((n, i) => {
+        console.log(n)
+        if (i == 0) n.style["width"] = "80%", n.style["transition-delay"] = "0.4s"
+        if (i == 1) n.style["width"] = "60%", n.style["transition-delay"] = "0.5s"
+        if (i == 2) n.style["width"] = "95%", n.style["transition-delay"] = "0.6s"
+    });
+    if (currentSection == 2) document.querySelector('.mouse').classList.add('ease')
+    else document.querySelector('.mouse').classList.remove('ease')
     e.scrollIntoView({ block: "start", behavior: "smooth" });
 }
 
