@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400800&display=swap")
+$bg-fcolor: #161c26
+$bg-scolor: #1f2630
+*
+    font-family: "Sen", sans-serif !important
+::-webkit-scrollbar 
+    width: 0
+
+html
+    overflow: hidden
+    background: -webkit-radial-gradient($bg-scolor 0%, $bg-fcolor 100%)
+    background: radial-gradient($bg-scolor 0%, $bg-fcolor 100%)
+    background-color: $bg-fcolor
+    background-size: cover
+    background-attachment: fixed
+
+section
+    height: 100vh
+
+.nav-bar
+    display: flex
+    justify-content: center
+    align-items: center
+    position: fixed
+    z-index: 20
+    height: 100vh
+    width: 3rem
+    .list
+        height: 10rem
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        img
+            opacity: 0.4
+            width: 100%
+            transition: all 0.3s
+        .home,
+        .about,
+        .feed
+            display: block
+            max-width: 1.5rem
+            &:active,
+            &:hover,
+            &.selected
+                img
+                    opacity: 1
+                    transform: scale(1.1)
+                    transition: all 0.6s
+.mouse
+    height: 100vh
+    display: flex
+    position: fixed
+    right: 50%
+    left: 50%
+    z-index: 20
+    justify-content: center
+    transition: 1s
+    img
+        position: absolute
+        bottom: 0.5rem
+        max-width: 1.2rem
+        opacity: 0.4
+        animation: light 3s infinite
+.scroll
+    display: flex
+    justify-content: center
+    align-items: center
+    position: fixed
+    z-index: 20
+    right: 0
+    height: 100vh
+    width: 3rem
+    .line
+        background-color: #ffffff66
+        opacity: 0.4
+        height: 10rem
+        width: 0.1rem
+        display: flex
+        flex-direction: column
+        align-items: center
+        .bar
+            margin-top: 0rem
+            width: 0.4rem
+            height: 3rem
+            background-color: #FFF
+            transition: cubic-bezier(0.19, 1, 0.22, 1) 1.3s
+.wrapper
+    display: grid
+    grid-template-columns: 3rem 1fr 3rem
+    grid-template-rows: repeat(3, 100vh)
+    grid-template-areas: ". s-1 ." ". s-2 ." ". s-3 ."
+
+.slide-1
+    grid-area: s-1
+    display: grid
+    grid-template-columns: 1fr 2rem 1fr
+    grid-template-areas: "tbox . img"
+    align-items: center
+    .text-box
+        grid-area: tbox
+        padding: 3rem
+        .t-1
+            font-size: 70px
+            font-weight: bold
+            color: #fff
+            margin-bottom: 1rem
+
+        .t-2
+            font-size: 67px
+            font-weight: bold
+            color: #475364
+            margin-bottom: 3rem
+
+        .t-3
+            font-size: 20px
+            line-height: 2rem
+            font-weight: normal
+            color: #687484
+    .image
+        grid-area: img
+        display: flex
+        justify-content: center
+        align-items: center
+        overflow: hidden
+        img
+            max-width: 70%
+
+.slide-2
+    grid-area: s-2
+    display: grid
+    grid-template-columns: 1fr 2rem 1fr
+    grid-template-areas: "img . tbox"
+    align-items: center
+    .image
+        grid-area: img
+        display: flex
+        justify-content: center
+        align-items: center
+        overflow: hidden
+        img
+            max-width: 70%
+    .text-box
+        grid-area: tbox
+        padding: 3rem
+        .t-1
+            font-size: 70px
+            font-weight: bold
+            color: #fff
+            margin-bottom: 2rem
+        ul
+        text-align: left !important
+        .bar
+            list-style: none !important
+
+        .tag
+            display: block
+            color: #687484
+            margin-bottom: 0.4rem
+
+        .p-border
+            margin-bottom: 35px
+            border-radius: 3px
+            background: #09131B
+            height: 1rem
+            overflow: hidden
+
+        .p-progress
+            height: 1rem
+            width: 0%
+            display: block
+            border-radius: 3px
+            transition: 2s
+            
+.slide-3
+    grid-area: s-3
+    grid-template-areas: "text" "cards"
+    align-items: center
+    padding: 3rem
+    overflow-y: scroll
+.t-1
+    font-size: 70px
+    font-weight: bold
+    color: #fff
+    margin-bottom: 2rem
+.cards
+    grid-area: cards
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+    grid-gap: 1rem
+    .card
+        color: rgba(0, 0, 0, 0.1)
+        height: 215px
+        position: relative
+        overflow: hidden
+        border-radius: 10px
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25)
+        display: grid
+        grid-template-rows: 1fr 1fr
+        transition: 0.3s all
+    h3 
+        color: white
+        font-size: 24px
+        margin: 20px 0 0 20px
+        filter: opacity(0)
+        transition: 0.3s all
+    p 
+        color: white
+        font-weight: 400
+        font-size: 16px
+        align-self: end
+        margin: 0 0 20px 20px
+        letter-spacing: 0.5px
+        filter: opacity(0)
+        transition: 0.3s all
+    img 
+        position: absolute
+        top: 5%
+        bottom: 5%
+        height: 90%
+        width: 100%
+        z-index: 0
+        transition: 0.3s all
+
+
+.ease
+    opacity: 0!important
+    transition:1s!important
+@keyframes light 
+    0%  
+        opacity: 0.4
+    50% 
+        opacity: 1
+    100% 
+        opacity: 0.4
+@import "media.sass"

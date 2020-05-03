@@ -1,22 +1,91 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="">
-  <title>Eugene Reim</title>
-  <link rel="stylesheet" href="css/counter_style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Eugene's Reim's portfolio that contain all he's projects">
+    <title>Eugene Reim</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-<div class="container">
-  <span class="tag">#TheCodingWeekend</span>
-  <h1 id="title">The Challenge</h1>
-  <ul>
-    <li><span id="days"></span>days</li>
-    <li><span id="hours"></span>Hours</li>
-    <li><span id="minutes"></span>Minutes</li>
-    <li><span id="seconds"></span>Seconds</li>
-  </ul>
-</div>
-  <script  src="js/counter_script.js"></script>
+    <div class="nav-bar">
+        <div class="list">
+            <a class="home selected" id="ic-0" onclick="doScroll(this,'slide-1')"><img src="svg/ic_home.svg" alt=""></a>
+            <a class="about" id="ic-1" onclick="doScroll(this,'slide-2')"><img src="svg/ic_about.svg" alt=""></a>
+            <a class="feed" id="ic-2" onclick="doScroll(this,'slide-3')"><img src="svg/ic_feed.svg" alt=""></a>
+        </div>
+    </div>
+    <div class="mouse hide-sm">
+        <img class="" src="svg/ic_mouse.svg" alt="">
+    </div>
+    <div class="scroll">
+        <div class="line">
+            <div class="bar"></div>
+        </div>
+    </div>
+    <div class="wrapper" id="stack">
+        <section class="slide-1">
+            <div class="text-box">
+                <h1 class="t-1">Independent</h1>
+                <h1 class="t-2">Web Developer</h1>
+                <h3 class="t-3">Hi! I'm a mid-lvl web developer from Belarus. <br class="hide-sm"> I develop websites,
+                    web applications and chatbots. <br class="hide-sm"> Here you can see my projects.</h3>
+            </div>
+            <div class="image hide-sm">
+                <img src="/img/screen.png" alt="screen">
+            </div>
+        </section>
+        <section class="slide-2">
+            <div class="image hide-sm">
+                <img src="/img/screen-2.png" alt="screen">
+            </div>
+            <div class="text-box">
+                <h1 class="t-1">My Skills</h1>
+                <ul>
+                    <li class="bar">
+                        <em class="tag">HTML</em>
+                        <div class="p-border">
+                            <span style="background:#EB3862;" class="p-progress fadeInLeft"></span>
+                        </div>
+                    </li>
+                    <li class="bar">
+                        <em class="tag">CSS</em>
+                        <div class="p-border">
+                            <span style="background:#4AC1EE;" class="p-progress fadeInLeft"></span>
+                        </div>
+                    </li>
+                    <li class="bar">
+                        <em class="tag">JS</em>
+                        <div class="p-border">
+                            <span style="background:#FBB478;" class="p-progress fadeInLeft"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="slide-3">
+            <h1 class="t-1">Feed</h1>
+            <div class="cards">
+                <div class="card"><img src="img/screen-2.png" alt="placeholder"></div>
+                <div class="card"><img src="img/screen-2.png" alt="placeholder"></div>
+                <div class="card"><img src="img/screen-2.png" alt="placeholder"></div>
+                <div class="card"><img src="img/screen-2.png" alt="placeholder"></div>
+                <div class="card"><img src="img/screen-2.png" alt="placeholder"></div>
+                <div class="card"><img src="img/screen-2.png" alt="placeholder"></div>
+                <div class="card"><img src="img/screen-2.png" alt="placeholder"></div>
+                <div class="card"><img src="img/screen-2.png" alt="placeholder"></div>
+            </div>
+        </section>
+    </div>
+    <script src="js/scroll.js"></script>
 </body>
+
 </html>
