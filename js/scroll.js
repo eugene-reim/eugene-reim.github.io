@@ -32,11 +32,12 @@ function doScroll(e, t) {
     });
     if (currentSection == 2) document.querySelector('.mouse').classList.add('ease')
     else document.querySelector('.mouse').classList.remove('ease')
-    e.scrollIntoView({ block: "start", behavior: "smooth" });
+    section.forEach(n => n.classList.remove('s-show'))
+    e.classList.add('s-show')
+    document.querySelector('.bar').style.margin = (currentSection * 3.5) + "rem 0 0 0";
 }
-
 /*------------- Gesture Handle -------------*/
-/*let tsX = 0,
+let tsX = 0,
     tsY = 0,
     teX = 0,
     teY = 0;
@@ -56,21 +57,13 @@ gZone.addEventListener('touchend', e => {
 function handleGesture() {
     if (teY <= tsY) scrollTo(0);
     if (teY >= tsY) scrollTo(1);
-}*/
+}
 
 /*------------- Custom Scrollbar -------------*/
-let scrollHeight = 20,
+/*let scrollHeight = 20,
     scrollOffset = 0,
     scrollPercent = 0;
-resize()
-function loop() {
-    scrollOffset = window.pageYOffset || window.scrollTop;
-    scrollPercent = scrollOffset / scrollHeight || 0;
+function loop(p) {
     document.querySelector('.bar').style.margin = (scrollPercent * 14) + "rem 0 0 0";
     requestAnimationFrame(loop);
-}
-function resize() {
-    scrollHeight = window.innerHeight * 4;
-}
-loop();
-window.addEventListener('resize', e => { resize() });
+}*/
