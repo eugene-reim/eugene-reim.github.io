@@ -25,7 +25,7 @@ function scrollTo(d) {
 }
 
 function doScroll(e, t) {
-   $('.list .selected').forEach(n => n.classList.remove('selected'))
+    $('.list .selected').forEach(n => n.classList.remove('selected'))
     if (t) e.classList.add("selected"), e = $('.' + t)[0], currentSection = parseInt(t.split("").slice(-1)[0]) - 1;
     if (currentSection == 1) $('.p-progress').forEach((n, i) => {
         if (i == 0) n.style["width"] = "80%", n.style["transition-delay"] = "0.4s"
