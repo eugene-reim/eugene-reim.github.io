@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400800&display=swap")
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;800&display=swap")
 $bg-fcolor: #161c26
 $bg-scolor: #1f2630
 =keyframes($animation-name)
@@ -11,7 +11,6 @@ $bg-scolor: #1f2630
 *
     font-family: "Sen", sans-serif !important
 html
-    overflow: hidden
     background: -webkit-radial-gradient($bg-scolor 0%, $bg-fcolor 100%)
     background: radial-gradient($bg-scolor 0%, $bg-fcolor 100%)
     background-color: $bg-fcolor
@@ -100,6 +99,7 @@ section
             background-color: #FFF
             transition: cubic-bezier(0.19, 1, 0.22, 1) 1.3s
 .wrapper
+    overflow: hidden
     display: grid
     grid-template-columns: 3rem 1fr 3rem
     grid-template-areas: ". slide ."
