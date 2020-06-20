@@ -13,7 +13,7 @@ document.addEventListener('keydown', e => {
     if (isScrolling) return;
     if (e.code == 'ArrowUp' || e.code == 'ArrowLeft') scrollTo(1);
     if (e.code == 'ArrowDown' || e.code == 'ArrowRight') scrollTo(0);
-});
+},{passive: true});
 function scrollTo(d) {
     isScrolling = true;
     if (!d && currentSection < section.length - 1) currentSection++
@@ -44,10 +44,10 @@ let tsY = 0,
 
 html.addEventListener('touchstart', e => {
     tsY = e.changedTouches[0].screenY;
-}, false);
+}, false,{passive: true});
 
 html.addEventListener('touchend', e => {
     teY = e.changedTouches[0].screenY;
     if (teY <= tsY) scrollTo(0)
     else scrollTo(1);
-}, false);
+}, false,{passive: true});
