@@ -18,6 +18,25 @@ html
     background-size: cover
     background-attachment: fixed
 
+.preloader
+    position: absolute
+    background: -webkit-radial-gradient($bg-scolor 0%, $bg-fcolor 100%)
+    background: radial-gradient($bg-scolor 0%, $bg-fcolor 100%)
+    background-color: $bg-fcolor
+    min-width: 100vw
+    min-height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 200
+    transition: opacity 0.25s linear
+    .indicator
+        position: relative
+        width: 20vh
+        animation: spin 2s ease infinite
+.fade
+    opacity: 0
+
 section
     height: 100vh
     opacity: 0!important
@@ -246,4 +265,15 @@ section
         opacity: 1
     100%
         opacity: 0.4
+@keyframes spin
+  0%
+    transform: rotate(0deg)
+  25%
+    transform: rotate(90deg)
+  50%
+    transform: rotate(180deg)
+  75%
+    transform: rotate(270deg)
+  100%
+    transform: rotate(360deg)
 @import "media.sass"

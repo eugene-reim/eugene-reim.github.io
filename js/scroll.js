@@ -5,7 +5,6 @@ let $ = (elem) => { return document.querySelectorAll(elem) },
     currentSection = 0,
     isScrolling = false;
 $(".wrapper")[0].onwheel = e => {
-    e.preventDefault();
     if (!isScrolling) scrollTo(e.deltaY < 0 ? 1 : 0);
 }
 document.addEventListener('keydown', e => {
@@ -21,7 +20,7 @@ function scrollTo(d) {
     return doScroll(section[currentSection]), $("#ic-" + currentSection)[0].classList.add("selected"),
         setTimeout(() => {
             isScrolling = false;
-        }, 500)
+        }, 1000)
 }
 
 function doScroll(e, t) {

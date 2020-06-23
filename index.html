@@ -16,6 +16,9 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <img src="android-chrome-192x192.png" alt="indicator" class="indicator">
+    </div>
     <div class="nav-bar">
         <div class="list">
             <a class="home selected" id="ic-0" onclick="doScroll(this,'slide-1')"><img src="svg/ic_home.svg" alt=""></a>
@@ -32,7 +35,7 @@
         </div>
     </div>
     <div class="wrapper" id="stack">
-        <section class="slide-1 s-show">
+        <section class="slide-1">
             <div class="text-box">
                 <h1 class="t-1">Independent</h1>
                 <h1 class="t-2">Web Developer</h1>
@@ -79,6 +82,7 @@
         </section>
     </div>
     <script src="js/scroll.js"></script>
+    <script src="js/preloader.js"></script>
 </body>
 
 </html>
